@@ -36,7 +36,7 @@
 			length = 1; 
 			for (i = 0; i < length; i++)
 				name += (adjectives[Math.floor(Math.random()*adjectives.length)]
-						 + "_" + nouns[Math.floor(Math.random()*nouns.length)]);
+						 + " " + nouns[Math.floor(Math.random()*nouns.length)]);
 			name = name.charAt(0).toUpperCase() + name.slice(1);
 			document.write("<p id='name'>" + name + "</p>"); 
 		</script>
