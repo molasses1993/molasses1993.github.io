@@ -30,10 +30,10 @@
 				'n', 'p', 'r', 's', 't', 'th', 'v', 'x', 'z'];
 			vowels = ['a', 'au', 'e', 'i', 'o', 'ou', 'u', 'y'];
 			name = "";
-			length = 2; 
+			length = 1; 
 			for (i = 0; i < length; i++)
 				name += (adjectives[Math.floor(Math.random()*adjectives.length)]
-						 + vowels[Math.floor(Math.random()*vowels.length)]);
+						 + " " + vowels[Math.floor(Math.random()*vowels.length)]);
 			name = name.charAt(0).toUpperCase() + name.slice(1);
 			document.write("<p id='name'>" + name + "</p>"); 
 		</script>
