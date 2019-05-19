@@ -28,12 +28,15 @@
 			consonnants = [
 				'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 
 				'n', 'p', 'r', 's', 't', 'th', 'v', 'x', 'z'];
+			nouns = ["odor","swab","death","nibblets", "toejam","orifice","saliva", "exorcism", "anvil", "maggot", "intestines", "christ", "pussy", "murder", "succubus", "grinder", "pile", "nausea", "grime", "biggot", "snot", "fungus", "lard", "smear", "vein", "curd", "lard", "gristle", "meat", "smear", "yeast", "wound", "puke", "maggots", "nausea", "horse", "fucker", "ritual", "cum", "fuck", "god", "dagger", "blood", "tendon", "mud", "dirt", "brains", "mucus", "sinus", "infection", "leakage", "yeast", "cum", "anus", "penis", "Vomit", "rot", "nasal passage", "mucuous", "discharge", "lung", "loogie", "butthole", "schpincter", "fetus", "jizz", "seepage", "smegma", "pus", "orifice", "sputum", "discharge", "bitch", "corpse", "bags","eaters","coitus","membrane","thrust","cannibal"];
+
+
 			vowels = ['a', 'au', 'e', 'i', 'o', 'ou', 'u', 'y'];
 			name = "";
 			length = 1; 
 			for (i = 0; i < length; i++)
 				name += (adjectives[Math.floor(Math.random()*adjectives.length)]
-						 + " " + vowels[Math.floor(Math.random()*vowels.length)]);
+						 + "_" + nouns[Math.floor(Math.random()*nouns.length)]);
 			name = name.charAt(0).toUpperCase() + name.slice(1);
 			document.write("<p id='name'>" + name + "</p>"); 
 		</script>
